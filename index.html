@@ -1,0 +1,76 @@
+<html lang="en">
+<link rel = 'stylesheet' href = 'style.css'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spongebob</title>
+         
+</head>
+    <body>
+      <div class="container">
+          <header>
+              <div class="header-content">
+                  <div class = help-link>
+                      <a href = "#">Help?</a>
+                  </div>
+                  <div class="level">
+                      <p>Level:</p>
+                        <div class=" level-links">
+                    <ul>
+                          <li class="current"><a href="index.html">1</a></li>
+                          <li><a href="index2.html">2</a></li>
+                          <li><a href="index3.html">3</a></li>
+                          <li><a href="index4.html">4</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="score" id="score">
+                
+                </div>
+              </div>
+          </header>
+          <section>
+              <div class="section">
+                  <div class="spongebob-image" id="spongebob"></div>
+              </div>
+              <div class="form">
+                  <p class="paragraph">Who is this character?</p>
+                  <form>
+                      <div class="write">
+                          <input type="text" id="answer" placeholder="Enter your answer here">
+                      </div>
+                     <div class="submit">
+                     <input id="submit" type="submit" value="SUBMIT">
+                     </div>
+                  </form>
+                  <div class="navigation">
+                      <div class="previous">
+                          <a href="index4.html"><p>&#8592 Previous</p></a>
+                      </div>
+                      <div class="next">
+                          <a href="index2.html"><p>Next &#8594 </p></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <script src="script.js"></script>
+      <script>
+          button.addEventListener('click', (e)=>{
+            e.preventDefault();  
+            answer = (answer.value.toLowerCase());
+            if(answer === answers[0]){
+                image.innerHTML = '<img src="SPONGEBOB_HAPPY.png" alt="spongebob-image">';
+                score.innerHTML = '<h1>5</h1>';
+            }
+            else{
+                image.innerHTML = '<img src="SPONGEBOB_SAD.png" alt="spongebob-image">';
+            }
+            
+          });
+        
+
+      </script>
+        </body>
+</html>

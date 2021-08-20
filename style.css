@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #847e78;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.header-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.help-link a{
+    background-color: #874306;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.level{
+    font-size: 20px;
+    display: flex;
+}
+li {
+    display: inline;
+}
+.level-links a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #8c8d88;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.current a{
+    color: #874306;
+    background:#efe000;
+}
+.score h1{
+    color: 874306;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 100%;
+}
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paragraph{
+    color: #fff;
+    font-size: 50px;
+}
+input{
+    border: 2px solid#efe000;
+    border-radius:30px;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+}
+input::placeholder{
+ color: #874306;   
+ font-size: 18px;
+ font-weight: bolder;
+}
+.write input{
+     background: inherit;
+}
+.submit input{
+    background-color: #efe000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 50px;
+}
+.submit input:hover{
+    background-color: #fff;
+    color: #efe000;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.navigation a{
+    font-size: 40px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.previous a{
+    color: red;
+}
+.next a{
+    color: greenyellow;
+}
+@media screen and (max-width: 1200px){
+    section{
+        margin-top:150px;
+    }
+    .help-link a{
+        font-size:12px;
+    }
+    .score h1{
+        font-size: 18px;
+    }
+    .spongebob-image img{
+     width: 300px;
+     margin-left: 75px;
+    }
+    .form{
+        margin-right: 75px;
+    }
+    .paragraph, .navigation a{
+        font-size: 30px;
+
+    }
+}
+@media screen and (max-width: 933px){
+    .spongebob-image img{
+        width: 250px;
+        margin-left: 25px;
+       }
+       .form{
+           width: 40%;
+        }
+    .paragraph, .navigation a{
+        font-size: 20px;
+         text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    section{
+        margin-top: 250px;
+    }
+    .spongebob-image img{
+        width: 200px;
+        margin-left: 0;
+    }
+    .form{
+        width: 50%;
+        margin-right: 25px;
+    }
+    .score{
+        position: absolute;
+        top: 60px;
+        left: 85.8%;
+    }
+}
+@media screen and (max-width :500px){
+    .score{
+        left:82.5%;
+    }
+    .paragraph, .navigation a, input ::placeholder, .submit input, .write input{
+       font-size: 16px; 
+    }
+    section{
+        margin-top: 125px;
+        display: block;
+    }
+    .help-link{
+        margin-left: -20px, 0, 0, .20px;
+    }
+    .level p{
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    .level-links{
+        margin-top: -3.5px;
+    }
+    .score{
+       left: 81%;
+    }
+    .spongebob-image img{
+        width: 60%;
+        height: 300px;
+        margin-left: 20%;
+    }
+    .form{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    .paragraph, .navigation a, input ::placeholder, .submit input, .write input{
+        font-size: -20px;
+    }
+}
+@media screen and (max-width:420px){
+    .score{
+        top: 10px;
+        left: 80%;
+    }
+    .help-link{
+        position: absolute;
+        top: 35px;
+    }
+    .level{
+        position: absolute;
+        top: 100px;
+        left: 17%;
+    }
+    section{
+        margin-top: 175px;
+    }
+}
+@media screen and (max-width:380){
+     .level{
+         left: 9%;
+     }
+     .spongebob-image img{
+         width: 75%;
+         margin-left: 12.5%;
+         height: 325px;
+     }
+     .score{
+         left: 78%;
+     }
+}
